@@ -1,0 +1,123 @@
+:root{
+    /*Primary*/
+
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+    /*Neutral*/
+
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--Light-grey);
+}
+
+.contenedor{
+    padding: 2rem;
+    height: 83vh;
+    width: 75vw;
+    border-radius: 2rem 2rem 10rem 2rem;
+    background-color: var(--White   );
+    
+}
+
+
+.cabecera form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cabecera form label{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--Smokey-grey);
+    margin-bottom: 0.5rem;
+}
+
+.cabecera form .inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera form .inputs input{
+    border: 1px solid var(--Light-grey);
+    width: 10rem;
+    height: 4rem;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+}
+
+.boton{
+    display: flex;
+    align-items: center;
+}
+
+.boton hr{
+    width: 90%;
+    border: 1px solid var(--Light-grey);
+}
+.boton button{
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: var(--Purple);
+    border: none;
+    width: 5rem;
+    height: 5rem;
+}
+
+.boton img{
+    width: 55%;
+}
+
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    font-size: 6.8rem;
+    line-height: 7rem;
+    
+}
+
+.cuerpo .cuerpo__resultado{
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+.cuerpo .cuerpo__resultado p{
+    margin: 0 0 0 1rem;
+}
+
+.cuerpo .cuerpo__resultado span{
+    color: var(--Purple);
+}
