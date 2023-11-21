@@ -121,3 +121,73 @@ body{
 .cuerpo .cuerpo__resultado span{
     color: var(--Purple);
 }
+
+/*View Mobile */
+
+@media (max-width: 376px) {
+    
+    .contenedor{
+        height: 70vh;
+        width: 90vw;
+        border-radius: 1rem 1rem 10rem 1rem;
+    }
+
+    .cabecera form .inputs input{
+        width: 85%;
+        height: 3rem;
+        font-size: 1rem;
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+
+    .cabecera form .inputs label{
+        font-size: 0.7rem;
+    }
+
+    .boton{
+        position: relative;
+    }
+
+    .boton hr{
+        width:100%;
+        margin-top: 3rem;
+    }
+
+    .boton button{
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        left: 38%;
+        top: 34%;
+    }
+
+    .cuerpo{
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 376px) and (max-width:840px){
+
+
+    .contenedor{
+        min-width: 370px;
+    }
+    
+    .cabecera form .inputs input{
+        max-width: 10rem;
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .cuerpo{
+        font-size: 3.5rem;
+    }
+
+    .boton button{
+        width: 5rem;
+        height: 4rem;
+        margin-top: 1rem;
+    }
+}
