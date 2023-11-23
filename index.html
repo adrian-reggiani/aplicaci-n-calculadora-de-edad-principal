@@ -17,17 +17,17 @@
       <form action="">
 
         <div class="inputs">
-          <label for="Day">Day</label>
-          <input type="number" name="Day" id="Day" placeholder="DD">
+          <label id="lDay" for="Day">Day</label>
+          <input  type="number" name="Day" id="Day" placeholder="DD">
         </div>
 
-        <div class="inputs">
-          <label for="Month">Month</label>
+        <div class="inputs ">
+          <label id="lMonth" for="Month">Month</label>
           <input type="number" name="Month" id="Month" placeholder="MM">
         </div>
 
         <div class="inputs">
-          <label for="Year">Year</label>
+          <label id="lYear" for="Year">Year</label>
           <input type="number" name="Year" id="Year" placeholder="YYYY">
         </div>
 
@@ -37,15 +37,15 @@
     <div class="boton">
       
       <hr>
-      <button class="enviar"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+      <button class="enviar" onclick="calcular()"><img src="./assets/images/icon-arrow.svg" alt=""></button>
 
     </div>
 
     <div class="cuerpo">
 
-      <div class="cuerpo__resultado"><span> -- </span><p>years</p></div>
-      <div class="cuerpo__resultado"><span> -- </span><p>months</p></div>
-      <div class="cuerpo__resultado"><span> -- </span><p>days</p></div>
+      <div class="cuerpo__resultado"><span class="cuerpo__years"> -- </span><p>years</p></div>
+      <div class="cuerpo__resultado"><span class="cuerpo__months"> -- </span><p>months</p></div>
+      <div class="cuerpo__resultado"><span class="cuerpo__days"> -- </span><p>days</p></div>
 
     </div>
   </main>
@@ -54,5 +54,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="/scripts/index.js"></script>
 </body>
 </html>

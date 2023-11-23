@@ -61,10 +61,15 @@ body{
     margin-bottom: 0.5rem;
 }
 
+.cabecera form .errorLabel{
+    color: var(--Light-red);
+}
+
 .cabecera form .inputs{
     display: flex;
     flex-direction: column;
 }
+
 
 .cabecera form .inputs input{
     border: 1px solid var(--Light-grey);
@@ -76,6 +81,18 @@ body{
     margin-right: 2rem;
 }
 
+.cabecera form .inputs .errorBorde {
+    outline: 1.5px solid var(--Light-red);
+}
+
+.cabecera form .inputs input:hover{
+    cursor: pointer;
+}
+
+.cabecera form .inputs input:focus-visible{
+    outline: 1.5px solid var(--Purple);
+}
+
 .boton{
     display: flex;
     align-items: center;
@@ -85,7 +102,7 @@ body{
     width: 90%;
     border: 1px solid var(--Light-grey);
 }
-.boton button{
+.boton .enviar{
     margin-right: 1rem;
     border-radius: 50%;
     background-color: var(--Purple);
@@ -94,9 +111,16 @@ body{
     height: 5rem;
 }
 
+.boton .enviar:hover{
+    background-color:var(--Off-black);
+    cursor: pointer;
+}
+
 .boton img{
     width: 55%;
 }
+
+
 
 .cuerpo{
     display: flex;
@@ -120,6 +144,13 @@ body{
 
 .cuerpo .cuerpo__resultado span{
     color: var(--Purple);
+}
+
+.error{
+    margin: 0.5rem 0 0 0;
+    color: var(--Light-red);
+    font-weight: 400;
+    font-size: 0.7rem;
 }
 
 /*View Mobile */
@@ -155,7 +186,7 @@ body{
         margin-top: 3rem;
     }
 
-    .boton button{
+    .boton .enviar{
         width: 4rem;
         height: 4rem;
         position: absolute;
@@ -197,9 +228,10 @@ body{
         font-size: 3rem;
     }
 
-    .boton button{
+    .boton .enviar{
         width: 5rem;
         height: 4rem;
         margin-top: 1rem;
     }
 }
+
