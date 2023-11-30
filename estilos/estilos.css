@@ -157,16 +157,30 @@ body{
     position: relative;
     position: relative;
     animation-name: errorP;
-    animation-duration: 0.7s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
+    
 }
 
 @keyframes errorP {
     0%{
-        left: -50px; ;
+        top:-.5rem;
+        
     }
+
+    25%{
+        top: .5rem;
+    }
+    50%{
+        top:-.5rem ;
+    }
+
+    75%{
+        top: .5rem;
+    }
+
     100%{
-        left: 0;
+        top:0;
     }
 }
 
