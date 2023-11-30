@@ -59,6 +59,7 @@ body{
     letter-spacing: 0.2rem;
     color: var(--Smokey-grey);
     margin-bottom: 0.5rem;
+    transition-duration: 0.7s;
 }
 
 .cabecera form .errorLabel{
@@ -79,6 +80,7 @@ body{
     padding: 1rem;
     border-radius: 0.5rem;
     margin-right: 2rem;
+    transition: 0.7s;
 }
 
 .cabecera form .inputs .errorBorde {
@@ -114,6 +116,7 @@ body{
 .boton .enviar:hover{
     background-color:var(--Off-black);
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .boton img{
@@ -151,7 +154,23 @@ body{
     color: var(--Light-red);
     font-weight: 400;
     font-size: 0.7rem;
+    position: relative;
+    position: relative;
+    animation-name: errorP;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
 }
+
+@keyframes errorP {
+    0%{
+        left: -50px; ;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
 
 /*View Mobile */
 
